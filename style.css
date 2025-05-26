@@ -1,3 +1,109 @@
+.banner-carousel {
+  position: relative;
+  width: 100%;
+  height: 75vh; /* 75% of screen height */
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-slide.active {
+  opacity: 1;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.banner-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.banner-content p {
+  font-size: 1.5em;
+}
+.navbar {
+  position: relative;
+  z-index: 5000; /* higher than banner */
+}
+
+
+.dots-container {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+
+.floating-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px 30px;
+  border: 1px solid #c3e6cb;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.floating-banner .contact-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 18px;
+  margin-left: 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.floating-banner .contact-btn:hover {
+  background-color: #218838;
+}
+
+.floating-pic {
+  position: fixed;
+  width: 80px;
+  height: auto;
+  opacity: 0.85;
+  z-index: 999;
+  animation: float 6s ease-in-out infinite;
+}
+
+
 /* Reset some default browser styles */
 * {
   margin: 0;
@@ -98,3 +204,4 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+

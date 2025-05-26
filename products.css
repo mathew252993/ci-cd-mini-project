@@ -1,0 +1,58 @@
+/* Products and Prices Page Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #e8f0fe;
+    border: 1px solid #cfd8dc;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item:hover {
+    background-color: #d7e3fc;
+    transform: translateY(-5px);
+}
+
+.product-item h2 {
+    font-size: 24px;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #555;
+}
