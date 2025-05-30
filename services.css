@@ -26,10 +26,13 @@
 }
 
 .card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 200px; /* or any height that fits your design */
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
+
 
 .card h3 {
   margin-bottom: 15px;

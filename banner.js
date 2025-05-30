@@ -16,7 +16,7 @@ function nextSlide() {
 }
 
 // Auto-slide every 5 seconds
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 5000);
 
 // Allow clicking dots
 dots.forEach((dot, index) => {
